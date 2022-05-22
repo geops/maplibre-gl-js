@@ -14,7 +14,8 @@ type GeoJSONPolygons =| GeoJSONPolygon | GeoJSONMultiPolygon;
 
 // minX, minY, maxX, maxY
 type BBox = [number, number, number, number];
-const EXTENT = 8192;
+
+const EXTENT = 16384;
 
 function updateBBox(bbox: BBox, coord: Point) {
     bbox[0] = Math.min(bbox[0], coord[0]);

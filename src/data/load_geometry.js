@@ -10,7 +10,7 @@ import type Point from '@mapbox/point-geometry';
 // While visible coordinates are within [0, EXTENT], tiles may theoretically
 // contain cordinates within [-Infinity, Infinity]. Our range is limited by the
 // number of bits used to represent the coordinate.
-const BITS = 15;
+const BITS = 16;
 const MAX = Math.pow(2, BITS - 1) - 1;
 const MIN = -MAX - 1;
 
